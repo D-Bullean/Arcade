@@ -41,7 +41,7 @@ public class StartArcade implements Strategy {
 		if (Players.getMyPlayer().isInCombat() && !Prayer.isEnabled(Curse.SOUL_SPLIT)) {
 			scenario = 2;
 			return true;
-		} else if (getPrayer() < 90 && (Inventory.contains(3031) || Inventory.contains(3029) || Inventory.contains(3027)
+		} else if (getPrayer() < 25 && (Inventory.contains(3031) || Inventory.contains(3029) || Inventory.contains(3027)
 				|| Inventory.contains(3025))) {
 			scenario = 5;
 			return true;
@@ -102,6 +102,10 @@ public class StartArcade implements Strategy {
 			}
 
 		}
+
+	}
+
+}
 
 	}
 
